@@ -1,0 +1,23 @@
+<% require './main' %>
+<%require "sinatra"%>
+<% require "erb" %>
+  <form action=/main method="get">
+    <table>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>number</th>
+        <th>email<th></tr>
+        <%  contacts=Contact.all %>
+        <% contacts.each do |contact| %>
+        <tr>
+          <td><%= contact[:id] %></td>
+          <td><%= contact[:name] %></td>
+          <td><%= contact[:phone] %></td>
+          <td><%= contact[:email]%></td>
+        </tr>
+        <% end %>
+    </table>
+    <button name='option' value="main">Main</button>
+
+  </form>
