@@ -31,7 +31,7 @@ GEM
     minitest (5.13.0)
     mustermann (1.0.3)
     mysql2 (0.5.3)
-    rack (2.0.7)
+    rack (2.0.8)
     rack-protection (2.0.7)
       rack
     sinatra (2.0.7)
@@ -55,7 +55,7 @@ DEPENDENCIES
   cells
   cells-erb
   mysql2
-  rack (~> 2.0.1)
+  rack (~> 2.0.8)
   sinatra
 
 BUNDLED WITH
