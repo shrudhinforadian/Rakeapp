@@ -4,7 +4,6 @@ require 'erb'
 require './dbconnect'
 require './insert'
 require './delete'
-# require './view_all'
 class Contact < ActiveRecord::Base
 end
 get '/' do
@@ -27,7 +26,6 @@ get '/option' do
   when 'delete'
     erb :delete
   when 'view_all'
-    # view_all
     erb :view_all
   end
 end
